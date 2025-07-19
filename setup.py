@@ -4,6 +4,7 @@ setup(
     name="sistem-rekomendasi-laptop",
     version="0.1",
     packages=find_packages(),
+    package_dir={"": "src"},
     install_requires=[
         "pandas>=1.3.0",
         "numpy>=1.21.0",

@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import normalize
-from .preprocessor import LaptopDataPreprocessor
+from preprocessor import LaptopDataPreprocessor
 
 class LaptopRecommender:
     """Recommends laptops based on user preferences using VSM and content-based filtering."""

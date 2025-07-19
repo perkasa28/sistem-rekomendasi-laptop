@@ -3,14 +3,8 @@ Streamlit web application for the laptop recommendation system.
 """
 import streamlit as st
 import pandas as pd
-try:
-    # Try local import first
-    from .data_generator import generate_laptop_dataset
-    from .recommender import LaptopRecommender
-except ImportError:
-    # Fallback for deployment
-    from data_generator import generate_laptop_dataset
-    from recommender import LaptopRecommender
+from data_generator import generate_laptop_dataset
+from recommender import LaptopRecommender
 
 def load_data():
     """Load laptop data from CSV or generate if not exists."""
